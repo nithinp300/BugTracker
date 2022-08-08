@@ -1,6 +1,6 @@
 
 // reactstrap components
-import { Card, CardBody, CardTitle, Container, Row, Col } from "reactstrap";
+import {Container} from "reactstrap";
 
 const Header = () => {
   return (
@@ -9,7 +9,7 @@ const Header = () => {
         <Container fluid>
           <div className="header-body">
             {/* Card stats */}
-            <Row>
+            {/* <Row>
               <Col lg="6" xl="3">
                 <Card className="card-stats mb-4 mb-xl-0">
                   <CardBody>
@@ -124,7 +124,7 @@ const Header = () => {
                   </CardBody>
                 </Card>
               </Col>
-            </Row>
+            </Row> */}
           </div>
         </Container>
       </div>
