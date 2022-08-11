@@ -4,7 +4,6 @@ import { useLocation, Route, Switch, Redirect } from "react-router-dom";
 import { Container, Row, Col } from "reactstrap";
 
 // core components
-import AuthNavbar from "components/Navbars/AuthNavbar.js";
 import AuthFooter from "components/Footers/AuthFooter.js";
 
 import routes from "routes.js";
@@ -27,11 +26,11 @@ const Auth = (props) => {
 
   const getRoutes = (routes) => {
     return routes.map((prop, key) => {
-      if (prop.layout === "/auth") {
+      if (prop.layout === "auth") {
         return (
           <Route
-            path={prop.layout + prop.path}
-            component={prop.component}
+            path={prop.root + prop.path}
+            render={() => <prop.component {...props} />}
             key={key}
           />
         );
@@ -44,17 +43,13 @@ const Auth = (props) => {
   return (
     <>
       <div className="main-content" ref={mainContent}>
-        <AuthNavbar />
         <div className="header bg-gradient-info py-7 py-lg-8">
           <Container>
             <div className="header-body text-center mb-7">
               <Row className="justify-content-center">
                 <Col lg="5" md="6">
-                  <h1 className="text-white">Welcome!</h1>
-                  <p className="text-lead text-light">
-                    Use these awesome forms to login or create new account in
-                    your project for free.
-                  </p>
+                  <h1 className="text-white">Bug Tracker</h1>
+                  <p className="text-lead text-light">Login or register</p>
                 </Col>
               </Row>
             </div>
