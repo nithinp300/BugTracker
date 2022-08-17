@@ -1,1 +1,1 @@
-# [Argon Dashboard React]
+# [Bug Tracker React Application]
