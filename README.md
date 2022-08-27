@@ -14,3 +14,7 @@ Log into BugTracker after creating an account and begin by adding a new project 
 - MySQL
 - Authorization / Authentication utilizing JSON Web Tokens
 - Deployed through AWS
+
+## Development Notes
+### Prerequisites
+**Node**
