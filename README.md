@@ -17,4 +17,4 @@ Log into BugTracker after creating an account and begin by adding a new project 
 
 ## Development Notes
 ### Prerequisites
-**Node**
+**Java**
