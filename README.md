@@ -10,13 +10,7 @@ Log into BugTracker after creating an account and begin by adding a new project 
 
 ## Technologies Used
 - React
-- Spring Boot
-- MySQL
-- Authorization / Authentication utilizing JSON Web Tokens
+- Node.js/Express.js
+- PostgreSQL
+- Authorization/Authentication using JSON Web Tokens
 - Deployed through AWS
-
-## Development Notes
-### Prerequisites
-**Node.js**
-
-### To run React Application
